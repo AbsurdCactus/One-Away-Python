@@ -32,3 +32,4 @@ def palindrome_detector(string_one, string_two):
     else:
 
         return True
+# testing
