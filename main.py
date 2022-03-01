@@ -1,5 +1,5 @@
 
-def palindrome_detector(string_one, string_two):
+def one_away(string_one, string_two):
 
     string_list = [string_one, string_two]
     longest = max(string_list)
