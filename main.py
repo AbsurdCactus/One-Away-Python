@@ -14,16 +14,16 @@ def one_away(string_one, string_two):
 
 def one_edit_replace(string_one, string_two):
     
-    for i in range(0,len(string_one)):
+    found_difference = False
+    for c1,c2 in zip(string_one,string_two):
         
-        found_difference = False
+        if c1 != c2:
+            if found_difference:
+                return False
         
-        if string_one[i] != string_two[i]:
-            return found_difference
+            found_difference = True
         
-        found_difference = True
-        
-        return True
+    return True
 
 def one_edit_insert(s1, s2):
 
