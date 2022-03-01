@@ -60,7 +60,9 @@ class TestMain(unittest.TestCase):
 
     def test_pale_pals(self):
 
-        self.assertEqual(main.one_away)
+        self.assertEqual(main.one_away(
+            string_one="pale", string_two="pals"), True)
+        
 
     #there need to be a lot more tests
 
